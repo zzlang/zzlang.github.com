@@ -1,0 +1,12 @@
+# Site settings
+title: zzlang 
+email: ilovey2@126.com 
+description: > # this means to ignore newlines until "baseurl:"
+  test
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://zzlang.net" # the base hostname & protocol for your site
+twitter_username: zzlang
+github_username: zzlang
+
+# Build settings
+markdown: kramdown
