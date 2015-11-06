@@ -3,7 +3,7 @@ layout: post
 ---
 
 #Android Tips
-### 事件传递
+###事件传递
 
 1. 事件从 `Activity.dispatchTouchEvent()`开始传递，只要没有被停止或拦截，从最上层的 View(ViewGroup)开始一直往下(子 View)传递。子 View 可以通过 `onTouchEvent()`对事件进行处理。
 
@@ -17,7 +17,7 @@ layout: post
 
 上面的消费即表示相应函数返回值为 true。比如:
 
-``` java
+```java
     public boolean onTouchEvent(MotionEvent event) {
         if (mWindow.shouldCloseOnTouch(this, event)) {
             finish();
