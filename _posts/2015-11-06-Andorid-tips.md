@@ -17,14 +17,14 @@ layout: post
 
 上面的消费即表示相应函数返回值为 true。比如:
 
-```java
-    public boolean onTouchEvent(MotionEvent event) {
-        if (mWindow.shouldCloseOnTouch(this, event)) {
-            finish();
-            return true;
-        }
-        
-        return false;
+```
+public boolean onTouchEvent(MotionEvent event) {
+    if (mWindow.shouldCloseOnTouch(this, event)) {
+        finish();
+        return true;
     }
+    
+    return false;
+}
 ```
 
